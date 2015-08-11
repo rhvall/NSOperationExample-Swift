@@ -4,4 +4,4 @@ This example project uses the classes provided in the WWDC 2015 Advanced NSOpera
 
 It was compiled using Xcode 7.0 beta 4 (7A165T) using Swift 2.0 language features.
 
-![Screenshot](Example.jpg?raw=true "Screenshot of the running app")
+![Screenshot](./Example.png?raw=true "Screenshot of the running app")
