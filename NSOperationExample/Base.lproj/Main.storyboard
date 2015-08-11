@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8164.2" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8135.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NSOperationExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d6Y-TS-n8S" customClass="OperationView" customModule="NSOperationExample" customModuleProvider="target">
+                                <rect key="frame" x="250" y="98" width="100" height="80"/>
+                                <color key="backgroundColor" red="0.0" green="0.63137255000000003" blue="0.87058824000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cpa-hY-Bwc" customClass="OperationView" customModule="NSOperationExample" customModuleProvider="target">
+                                <rect key="frame" x="250" y="203" width="100" height="80"/>
+                                <color key="backgroundColor" red="0.0" green="0.63137255000000003" blue="0.87058824000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XZv-0i-uab">
+                                <rect key="frame" x="522" y="123" width="54" height="30"/>
+                                <state key="normal" title="Options"/>
+                                <connections>
+                                    <action selector="optionsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D4u-FK-UyF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s66-fe-L4e">
+                                <rect key="frame" x="513" y="228" width="63" height="30"/>
+                                <state key="normal" title="Provision"/>
+                                <connections>
+                                    <action selector="provisionTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aA1-ld-hp0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VbI-Dz-qqb">
+                                <rect key="frame" x="513" y="306" width="67" height="30"/>
+                                <state key="normal" title="Mail"/>
+                                <connections>
+                                    <action selector="mailTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GsO-fT-98t"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WyA-Na-x4j">
+                                <rect key="frame" x="513" y="379" width="67" height="30"/>
+                                <state key="normal" title="Calendar"/>
+                                <connections>
+                                    <action selector="calendarTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YrI-Jn-ut8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5f-jr-cx8">
+                                <rect key="frame" x="513" y="443" width="67" height="30"/>
+                                <state key="normal" title="Contacts"/>
+                                <connections>
+                                    <action selector="contactsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xfl-we-E51"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Any-Rw-iPK">
+                                <rect key="frame" x="511" y="501" width="67" height="30"/>
+                                <state key="normal" title="GAL"/>
+                                <connections>
+                                    <action selector="galTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PUg-m2-s4j"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Concurrency" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0F4-FA-XFV">
+                                <rect key="frame" x="20" y="306" width="99" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wle-MC-tOa">
+                                <rect key="frame" x="20" y="335" width="45" height="45"/>
+                                <state key="normal" title="+"/>
+                                <connections>
+                                    <action selector="increaseConcurrency:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mA1-iG-6l5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IqV-gk-xYi">
+                                <rect key="frame" x="20" y="396" width="45" height="45"/>
+                                <state key="normal" title="-"/>
+                                <connections>
+                                    <action selector="decreaseConcurrency:" destination="BYZ-38-t0r" eventType="touchUpInside" id="quq-AN-rbw"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="LH1-02-51Y">
+                                <rect key="frame" x="250" y="306" width="100" height="274"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OperationCell" id="Vxb-Tc-PgP">
+                                        <rect key="frame" x="0.0" y="22" width="100" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Vxb-Tc-PgP" id="zTi-3M-Uco">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="79"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="9mW-wz-x8H"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="qKu-Kf-8Is"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="OptionsBtn" destination="XZv-0i-uab" id="1Nl-Qz-lJF"/>
+                        <outlet property="calBtn" destination="WyA-Na-x4j" id="SKj-2Z-ZlW"/>
+                        <outlet property="concurrencyLbl" destination="0F4-FA-XFV" id="Osz-hY-uV5"/>
+                        <outlet property="contactsBtn" destination="u5f-jr-cx8" id="7cf-ZW-eBH"/>
+                        <outlet property="galBtn" destination="Any-Rw-iPK" id="ku3-Gr-Nog"/>
+                        <outlet property="mailBtn" destination="VbI-Dz-qqb" id="tjm-lg-wkF"/>
+                        <outlet property="optionsView" destination="d6Y-TS-n8S" id="GUm-So-EFC"/>
+                        <outlet property="provisionBtn" destination="s66-fe-L4e" id="1Ae-6a-F1h"/>
+                        <outlet property="provisionView" destination="Cpa-hY-Bwc" id="Obd-Le-KlP"/>
+                        <outlet property="tableView" destination="LH1-02-51Y" id="nCq-iv-xig"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="540" y="490"/>
+        </scene>
+    </scenes>
+</document>
